@@ -1,0 +1,17 @@
+{
+  "name": "@kyedoesdev/hello-svelte-and-vapor-frontend",
+  "version": "0.1.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel src/index.html"
+  },
+  "keywords": [],
+  "author": "Kye Lewis <kye@kyedoesdev.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/config-default": "2.7.0",
+    "parcel": "2.7.0",
+    "parcel-transformer-svelte": "1.2.3",
+    "svelte": "3.49.0"
+  }
+}
