@@ -1,0 +1,34 @@
+{
+  "name": "@kyedoesdev/get-your-ducks-frontend",
+  "version": "0.1.0",
+  "description": "",
+  "packageManager": "pnpm@7.0.0",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "targets": {
+    "modern": {
+      "engines": {
+        "browsers": ">= 50%"
+      }
+    }
+  },
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html",
+    "prettier": "prettier --write --plugin-search-dir=. .",
+    "test": "npm run test:prettier",
+    "test:prettier": "prettier --check --plugin-search-dir=. ."
+  },
+  "author": "Kye Lewis <kye@kyedoesdev.com>",
+  "license": "UPL",
+  "devDependencies": {
+    "@parcel/config-default": "2.7.0",
+    "parcel": "2.7.0",
+    "@parcel/core": "2.7.0",
+    "parcel-transformer-svelte": "1.2.3",
+    "prettier": "^2.7.1",
+    "prettier-plugin-svelte": "^2.7.0",
+    "svelte": "3.49.0"
+  }
+}

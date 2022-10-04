@@ -1,0 +1,6 @@
+- Lots of tidying
+- Use web crypto API to store a key to encrypt/decrypt task data
+- Add task completions [:COMPLETED]
+- Add load/save and QR load/save
+- Cleaner UI
+- Convert UUID to wordlist for easy backup?

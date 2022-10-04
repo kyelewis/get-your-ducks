@@ -1,12 +1,14 @@
 {
-  "name": "hello-svelte-and-vapor",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "@kyedoesdev/get-your-ducks",
+  "version": "0.1.0",
+  "description": "Don't break the chain app with svelte & vapor",
+  "author": "Kye <kye@kyedoesdev.com>",
+  "packageManager": "pnpm@7.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "docker rmi \"kyedoesdev/getyourducks:$npm_package_version\"",
+    "build": "docker build -t \"kyedoesdev/getyourducks:$npm_package_version\" .",
+    "dev": "docker run --rm --interactive --tty --name getyourducks-dev --publish-all --env-file ./.env \"kyedoesdev/getyourducks:$npm_package_version\""
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "license": "UPL"
 }
